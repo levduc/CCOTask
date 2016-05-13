@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Welcome</h2>
+
+<div class="col-md-6">
+    <h2>Create an Appointment</h2>
+    <p>
+       Click here to schedule appointment with one of our conselors
+    </p>
+    <p><a class="btn btn-default" href= @Url.Action("CreateAppointment", "Student")>Create</a></p>
+</div>
+<div class="col-md-6">
+    <h2>Review Confirm Appointments</h2>
+    <p>
+        Click here to review confirm appointments
+    </p>
+    <p><a class="btn btn-default" href=@Url.Action("Confirmed", "Student")>Check</a></p>
+</div>

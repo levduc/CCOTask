@@ -27,7 +27,6 @@ namespace CCOTask.Controllers
             return View(model);
         }
         //POST
-        [HttpPost]
         public ActionResult Confirm(int id)
         {
             var model = db.tblAppointments.Find(id);
@@ -41,7 +40,6 @@ namespace CCOTask.Controllers
             return View();
         }
         //
-        [HttpPost]
         public ActionResult Delete(int id)
         {
             var model = db.tblAppointments.Find(id);
